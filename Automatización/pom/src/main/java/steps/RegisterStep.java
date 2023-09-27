@@ -31,7 +31,6 @@ public class RegisterStep {
         //Here the password is validated
         registerPage.getDriver().findElement(registerPage.getTXT_PASSWORD2())
                 .sendKeys(registerData.getPassword());
-
         try {
             for (int i = 0; i < 2; i++) {
                 Thread.sleep(500);
@@ -44,7 +43,6 @@ public class RegisterStep {
         //Click the button to finish the registration and validate that the passwords are the same and comply with the parameters
         registerPage.getDriver().findElement(registerPage.getBTN_SINGIN2())
                 .click();
-
         try {
             for (int i = 0; i < 2; i++) {
                 Thread.sleep(500);
