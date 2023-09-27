@@ -46,7 +46,7 @@ public class LoginStep {
 
         try {
             for (int i = 0; i < 2; i++) {
-                Thread.sleep(500);
+                Thread.sleep(1000);
                 System.out.println("Sleep "+i);
             }
         }catch(Exception e) {
@@ -55,8 +55,8 @@ public class LoginStep {
     }
 
     @Step
-    public void validateAcount(){
-        Assert.assertThat(loginPage.getDriver().findElement(loginPage.getLBL_ACOUNT()).isDisplayed(), Matchers.is(true));
+    public void validateAccount(){
+        Assert.assertThat(loginPage.getDriver().findElement(loginPage.getLBL_ACCOUNT()).isDisplayed(), Matchers.is(true));
 
         try {
             for (int i = 0; i < 2; i++) {

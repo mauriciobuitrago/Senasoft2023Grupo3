@@ -25,6 +25,6 @@ public class LoginStepDefinition {
 
     @Then("^The user logs in successfully and can view his account$")
     public void theUserLogsInSuccessfullyAndCanViewHisAccount() {
-        loginStep.validateAcount();
+        loginStep.validateAccount();
     }
 }
