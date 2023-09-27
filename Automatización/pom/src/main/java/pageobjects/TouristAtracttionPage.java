@@ -4,21 +4,42 @@ import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
+//The default variable to open in the browser is captured
 @DefaultUrl("https://www.booking.com/attractions/index.es-ar.html")
+
+//Class that contains the mapping of all the elements to be used and extends the Page Object
 public class TouristAtracttionPage extends PageObject {
+
+    //Text field to enter the destination to visit
     By TXT_DESTINY = By.xpath("//input[@name='query']");
+
+    //Destination search drop-down list
     By SELECT_DESTINY = By.xpath("//div[text()='Medellín, Antioquia']");
+
+    //Click to open the calendar
     By INPUT_DATES = By.xpath("//div[text()='Seleccioná tus fechas']");
+
+    //Click on the date on the right side of the calendar
     By LBL_DATE = By.xpath("//span[@aria-label='30 Septiembre 2023']");
+
+    //Click on the date on the left side of the calendar
     By LBL_DATE2 = By.xpath("//span[@aria-label='8 Octubre 2023']");
+
+    //Click on the search button
     By BTN_SEARCH = By.xpath("//span[text()='Buscar']/parent::button");
+
+    //The text is captured after the search
     By TXT_VALIDATE_SEARCH = By.xpath("//div[text()='Medellín']");
+
+    //The lowest price filter is captured after searching
     By LBL_VALIDATE_LOWERPRICE = By.xpath("//label[text()='Precio más bajo']");
 
+    //Method to validate that after searching a low price filter is found
     public By getLBL_VALIDATE_LOWERPRICE() {
         return LBL_VALIDATE_LOWERPRICE;
     }
 
+    //Get and Setter Methods
     public void setLBL_VALIDATE_LOWERPRICE(By LBL_VALIDATE_LOWERPRICE) {
         this.LBL_VALIDATE_LOWERPRICE = LBL_VALIDATE_LOWERPRICE;
     }
