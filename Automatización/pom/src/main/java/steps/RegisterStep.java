@@ -21,7 +21,6 @@ public class RegisterStep {
 
         registerPage.getDriver().findElement(registerPage.getTXT_PASSWORD2())
                 .sendKeys("Senasoft123.");
-
         try {
             for (int i = 0; i < 2; i++) {
                 Thread.sleep(500);
@@ -33,7 +32,6 @@ public class RegisterStep {
 
         registerPage.getDriver().findElement(registerPage.getBTN_SINGIN2())
                 .click();
-
         try {
             for (int i = 0; i < 2; i++) {
                 Thread.sleep(500);
