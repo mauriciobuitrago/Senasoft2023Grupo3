@@ -110,7 +110,7 @@
                 > <span class="truncate-40"><a
                     href="736b1aa347ad0cc02b60562823f1ec2654d77d4dedca53e5400dc635edd55b88.html">Register</a></span>
                 > <span class="truncate-60"><a
-                    href="781bcec3a5bbc695d5007ffcc94cab6e7d5120116c3dbb1cf9e8d47a97b8d7a0.html">Register successful </a></span>
+                    href="2982925914e337e86cca30e5b3f8685645a8e7b8157f97a0f8bfb118cf1342f2.html">Register failure </a></span>
                 > Screenshots
             </span>
         </div>
@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-09-2023 12:23</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-09-2023 11:48</span>
     <br style="clear:left"/>
 </div>
 
@@ -167,9 +167,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Register successful
+                                <span class="error-color">Register failure
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -186,21 +186,59 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such element exception: no such element: Unable to locate element: {'method':'xpath','selector':'//*[text()='Are you a robot?']'}</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>steps.LoginStep.validateAccount(LoginStep.java:60)<br />stepdefinitions.RegisterStepDefinition.theUserRegistersHimselfSuccessfully(RegisterStepDefinition.java:22)<br />✽.The user registers himself successfully(src/test/resources/features/register.feature:11)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource1115403256382138278.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="0cf4fa57fd68b25e8a65384145dcdf81616beb9fea68de3d017b2c01a49e833c.png" title=" Given The user gets into the login page" width="1034"/>
                 <img src="0cf4fa57fd68b25e8a65384145dcdf81616beb9fea68de3d017b2c01a49e833c.png" title=" Open browser" width="1034"/>
                 <img src="0cf4fa57fd68b25e8a65384145dcdf81616beb9fea68de3d017b2c01a49e833c.png" title=" Given The user gets into the login page (completed)" width="1034"/>
-                <img src="2865212fc77e0e948e4d58c9a41561130d1837d01cb49b5aa56a2a17b990dda6.png" title=" When The user enters the data" width="1034"/>
-                <img src="2865212fc77e0e948e4d58c9a41561130d1837d01cb49b5aa56a2a17b990dda6.png" title=" Enter data" width="1034"/>
-                <img src="674e4be8b548f34c61e47a026b813bc89240c4e5bbf02900f82c350c4f6789da.png" title=" Enter data (completed)" width="1034"/>
-                <img src="674e4be8b548f34c61e47a026b813bc89240c4e5bbf02900f82c350c4f6789da.png" title=" When The user enters the data (completed)" width="1034"/>
-                <img src="19411432f596ae8fba99ef2d092243137e3886d768f7ff279b4072cba53552ed.png" title=" Then The user registers himself successfully" width="1034"/>
-                <img src="19411432f596ae8fba99ef2d092243137e3886d768f7ff279b4072cba53552ed.png" title=" Validate account" width="1034"/>
-                <img src="1daf082546ee9537274620ac3926e55d95fec3303e098457955b88042737f5e7.png" title=" Validate account (completed)" width="1034"/>
-                <img src="1daf082546ee9537274620ac3926e55d95fec3303e098457955b88042737f5e7.png" title=" Then The user registers himself successfully (completed): <span class='success-color'>SUCCESS</span>" width="1034"/>
+                <img src="4b2ca4ecb92484ee0e1a8e67da630493a091c92f8dc81000f2c1ee622fd960a4.png" title=" When The user enters the data" width="1034"/>
+                <img src="4b2ca4ecb92484ee0e1a8e67da630493a091c92f8dc81000f2c1ee622fd960a4.png" title=" Enter data" width="1034"/>
+                <img src="4b2ca4ecb92484ee0e1a8e67da630493a091c92f8dc81000f2c1ee622fd960a4.png" title=" When The user enters the data (completed)" width="1034"/>
+                <img src="4b2ca4ecb92484ee0e1a8e67da630493a091c92f8dc81000f2c1ee622fd960a4.png" title=" Then The user registers himself successfully" width="1034"/>
+                <img src="4b2ca4ecb92484ee0e1a8e67da630493a091c92f8dc81000f2c1ee622fd960a4.png" title=" Validate account: <span class='error-color'>ERROR</span>" width="1034"/>
             </div>
         </div>
+
+
     </div>
 </div>
 <div id="beforefooter"></div>

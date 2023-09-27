@@ -11,6 +11,24 @@ public class RegisterPage extends PageObject {
     By TXT_PASSWORD = By.xpath("//input[@name='new_password']");
     By TXT_PASSWORD2 = By.xpath("//input[@name='confirmed_password']");
     By BTN_SINGIN2 = By.xpath("//button[@type='submit']");
+    By PASSWORD_PARAMS = By.xpath("//div[text()='Your password must be at least 10 characters']");
+    By BTN_SINGIN_VALIDATE = By.xpath("//button[@type='submit']");
+
+    public By getBTN_SINGIN_VALIDATE() {
+        return BTN_SINGIN_VALIDATE;
+    }
+
+    public void setBTN_SINGIN_VALIDATE(By BTN_SINGIN_VALIDATE) {
+        this.BTN_SINGIN_VALIDATE = BTN_SINGIN_VALIDATE;
+    }
+
+    public By getPASSWORD_PARAMS() {
+        return PASSWORD_PARAMS;
+    }
+
+    public void setPASSWORD_PARAMS(By PASSWORD_PARAMS) {
+        this.PASSWORD_PARAMS = PASSWORD_PARAMS;
+    }
 
     public By getTXT_PASSWORD2() {
         return TXT_PASSWORD2;

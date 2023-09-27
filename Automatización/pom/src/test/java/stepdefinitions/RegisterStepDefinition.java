@@ -21,4 +21,24 @@ public class RegisterStepDefinition {
     public void theUserRegistersHimselfSuccessfully() {
         loginStep.validateAccount();
     }
+
+    @When("^The user enters the incorrect data$")
+    public void theUserEntersTheIncorrectData() {
+        registerStep.enterCredentials();
+    }
+
+    @Then("^The user password is rejected$")
+    public void theUserPasswordIsRejected() {
+        registerStep.validateParams();
+    }
+
+    @When("^The user enters the existent email$")
+    public void theUserEntersTheExistentEmail() {
+        registerStep.enterEmail();
+    }
+
+    @Then("^The user redirected to the login page$")
+    public void theUserRedirectedToTheLoginPage() {
+        registerStep.validateTheEmail();
+    }
 }
