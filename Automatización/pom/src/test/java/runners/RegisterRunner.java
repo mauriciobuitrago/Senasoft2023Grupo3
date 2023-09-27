@@ -7,10 +7,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/login.feature",
+        features = "src/test/resources/features/register.feature",
         snippets = SnippetType.CAMELCASE,
         glue = "stepdefinitions"
 )
 
-public class LoginRunner {
+public class RegisterRunner {
+
 }

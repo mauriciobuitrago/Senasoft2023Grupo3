@@ -20,11 +20,11 @@ public class LoginStepDefinition {
 
     @When("^The user enters the credentials$")
     public void theUserEntersTheCredentials() {
-
+        loginStep.enterCredential();
     }
 
     @Then("^The user logs in successfully and can view his account$")
     public void theUserLogsInSuccessfullyAndCanViewHisAccount() {
-
+        loginStep.validateAccount();
     }
 }
