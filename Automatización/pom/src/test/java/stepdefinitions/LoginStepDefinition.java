@@ -11,7 +11,6 @@ public class LoginStepDefinition {
     @Steps
     LoginStep loginStep;
 
-
     @Given("^The user gets into the login page$")
     public void theUserGetsIntoTheLoginPage() {
         loginStep.openBrowser();
