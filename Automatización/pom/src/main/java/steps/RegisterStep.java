@@ -1,20 +1,17 @@
 package steps;
 
 import net.thucydides.core.annotations.Step;
+import org.hamcrest.Matchers;
+import org.junit.Assert;
 import pageobjects.RegisterPage;
 
 public class RegisterStep {
     RegisterPage registerPage = new RegisterPage();
 
     @Step
-    public void open(){
-        registerPage.open();
-    }
-
-    @Step
-    public void enterCredential2(){
+    public void enterData(){
         registerPage.getDriver().findElement(registerPage.getTXT_EMAIL())
-                .sendKeys("senasoft2@yopmail.com");
+                .sendKeys("senasoft3@yopmail.com");
 
         registerPage.getDriver().findElement(registerPage.getBTN_SINGIN())
                 .click();
@@ -38,8 +35,5 @@ public class RegisterStep {
                 .click();
     }
 
-    @Step
-    public void confirmPassword(){
 
-    }
 }

@@ -8,8 +8,8 @@ import org.openqa.selenium.By;
 public class RegisterPage extends PageObject {
     By TXT_EMAIL = By.xpath("//input[@name='username']");
     By BTN_SINGIN = By.xpath("//button[@type='submit']");
-    By TXT_PASSWORD = By.xpath("//input[@class='ZMH9h0HCYH9GGNxHnXGJ']");
-    By TXT_PASSWORD2 = By.xpath("//input[@class='ZMH9h0HCYH9GGNxHnXGJ']");
+    By TXT_PASSWORD = By.xpath("//input[@name='new_password']");
+    By TXT_PASSWORD2 = By.xpath("//input[@name='confirmed_password']");
     By BTN_SINGIN2 = By.xpath("//button[@type='submit']");
 
     public By getTXT_PASSWORD2() {

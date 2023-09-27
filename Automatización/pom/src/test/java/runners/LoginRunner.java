@@ -11,5 +11,6 @@ import org.junit.runner.RunWith;
         snippets = SnippetType.CAMELCASE,
         glue = "stepdefinitions"
 )
+
 public class LoginRunner {
 }
