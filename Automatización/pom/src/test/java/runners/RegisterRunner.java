@@ -5,6 +5,7 @@ import cucumber.api.SnippetType;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
+//Initial configuration so that the system understands what you write in the characteristics
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/features/register.feature",
@@ -12,6 +13,6 @@ import org.junit.runner.RunWith;
         glue = "stepdefinitions"
 )
 
+//Class to run the scenarios
 public class RegisterRunner {
-
 }

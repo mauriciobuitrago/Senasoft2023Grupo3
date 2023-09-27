@@ -1,5 +1,6 @@
 package steps;
 
+import models.LoginCredentials;
 import net.thucydides.core.annotations.Step;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
@@ -7,6 +8,7 @@ import pageobjects.LoginPage;
 
 public class LoginStep {
     LoginPage loginPage = new LoginPage();
+    LoginCredentials loginCredentials;
 
     @Step
     public void openBrowser(){
@@ -14,9 +16,9 @@ public class LoginStep {
     }
 
     @Step
-    public void enterCredential(){
+    public void enterCredential(LoginCredentials loginCredentials){
         loginPage.getDriver().findElement(loginPage.getTXT_EMAIL())
-        .sendKeys("senasoft@yopmail.com");
+        .sendKeys(loginCredentials.getEmail());
 
         loginPage.getDriver().findElement(loginPage.getBTN_SINGIN())
         .click();
@@ -31,7 +33,7 @@ public class LoginStep {
         }
 
         loginPage.getDriver().findElement(loginPage.getTXT_PASSWORD())
-                .sendKeys("Senasoft123.");
+                .sendKeys(loginCredentials.getPassword());
 
         try {
             for (int i = 0; i < 2; i++) {
