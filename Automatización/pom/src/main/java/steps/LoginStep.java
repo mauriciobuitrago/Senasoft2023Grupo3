@@ -4,6 +4,7 @@ import net.thucydides.core.annotations.Step;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import pageobjects.LoginPage;
+
 public class LoginStep {
     LoginPage loginPage = new LoginPage();
 
