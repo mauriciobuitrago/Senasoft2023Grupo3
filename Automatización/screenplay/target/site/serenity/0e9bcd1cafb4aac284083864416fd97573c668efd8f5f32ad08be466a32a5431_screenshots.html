@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="5f59b805bdf834bb9e5ca1c5ef6e823575f66b800ec0fe736fe3c1b358dde955.html">Accommodation</a></span>
+                > <span class="truncate-60"><a
+                    href="0e9bcd1cafb4aac284083864416fd97573c668efd8f5f32ad08be466a32a5431.html">Search hotel deals with params and filters </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-09-2023 11:07</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Accommodation </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Search hotel deals with params and filters
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="484ba386f46f5463cd42ceed1502a7357f954ed1c6b1058498ea29cd0ba9dea9.png" title=" Given The user gets into the accommodation page" width="1366"/>
+                <img src="484ba386f46f5463cd42ceed1502a7357f954ed1c6b1058498ea29cd0ba9dea9.png" title=" User opens the https://www.booking.com/" width="1366"/>
+                <img src="484ba386f46f5463cd42ceed1502a7357f954ed1c6b1058498ea29cd0ba9dea9.png" title=" Given The user gets into the accommodation page (completed)" width="1366"/>
+                <img src="bed78f67629e0136035fcb4ef2afbd23e9e1790ab9f818bc3261ca15f8b8f667.png" title=" When The user changes the currency
+| currency | destination | inDate | outDate | adults | kids | rooms | stars | minPrice |
+| USD | Cartagena de Indias | 29 septiembre 2023 | 3 octubre 2023 | 3 | 2 | 3 | 3,4,5 | 200 |" width="1366"/>
+                <img src="bed78f67629e0136035fcb4ef2afbd23e9e1790ab9f818bc3261ca15f8b8f667.png" title=" User change currency" width="1366"/>
+                <img src="bed78f67629e0136035fcb4ef2afbd23e9e1790ab9f818bc3261ca15f8b8f667.png" title=" User clicks on Button to close initial popup" width="1366"/>
+                <img src="bed78f67629e0136035fcb4ef2afbd23e9e1790ab9f818bc3261ca15f8b8f667.png" title=" User clicks on Button to deploy the currency" width="1366"/>
+                <img src="c283542b4fdaa10934d400b0af9c9fa2a395b1b8f904cb45c0ccff1b1e969d94.png" title=" User clicks on Button to deploy the currency (completed)" width="1366"/>
+                <img src="c283542b4fdaa10934d400b0af9c9fa2a395b1b8f904cb45c0ccff1b1e969d94.png" title=" User clicks on Button to change the currency" width="1366"/>
+                <img src="8beb016bbee17a121cd4b8f33f30e15207c357cb1edb8b3d29bc486bd7cdee9f.png" title=" User clicks on Button to change the currency (completed)" width="1366"/>
+                <img src="8beb016bbee17a121cd4b8f33f30e15207c357cb1edb8b3d29bc486bd7cdee9f.png" title=" User change currency (completed)" width="1366"/>
+                <img src="dbd094d25943a4cc677e617b90e8795cb327b8f620bdf9d85ddad7e8b94e8a32.png" title=" When The user changes the currency
+| currency | destination | inDate | outDate | adults | kids | rooms | stars | minPrice |
+| USD | Cartagena de Indias | 29 septiembre 2023 | 3 octubre 2023 | 3 | 2 | 3 | 3,4,5 | 200 | (completed)" width="1366"/>
+                <img src="546d0a329fce0d5acb1ce801a708e0f9b56b2404e36d3ad96b75f096b9c363c1.png" title=" When The user performs a search at accommodation page" width="1366"/>
+                <img src="546d0a329fce0d5acb1ce801a708e0f9b56b2404e36d3ad96b75f096b9c363c1.png" title=" User search accommodation params" width="1366"/>
+                <img src="546d0a329fce0d5acb1ce801a708e0f9b56b2404e36d3ad96b75f096b9c363c1.png" title=" User clicks on Button to add adults at person params" width="1366"/>
+                <img src="546d0a329fce0d5acb1ce801a708e0f9b56b2404e36d3ad96b75f096b9c363c1.png" title=" User search accommodation params (completed)" width="1366"/>
+                <img src="546d0a329fce0d5acb1ce801a708e0f9b56b2404e36d3ad96b75f096b9c363c1.png" title=" When The user performs a search at accommodation page (completed)" width="1366"/>
+                <img src="53bf5ed76c1665c5d582bf27c401a19ddfea25323f0c871f2c87b02aa0ba2b39.png" title=" Then The user can see the destion required popup
+| currency | destination | inDate | outDate | adults | kids | rooms | stars | minPrice |
+| USD | Cartagena de Indias | 29 septiembre 2023 | 3 octubre 2023 | 3 | 2 | 3 | 3,4,5 | 200 |" width="1366"/>
+                <img src="53bf5ed76c1665c5d582bf27c401a19ddfea25323f0c871f2c87b02aa0ba2b39.png" title=" Then check required destination should be (true)" width="1366"/>
+                <img src="53bf5ed76c1665c5d582bf27c401a19ddfea25323f0c871f2c87b02aa0ba2b39.png" title=" Then The user can see the destion required popup
+| currency | destination | inDate | outDate | adults | kids | rooms | stars | minPrice |
+| USD | Cartagena de Indias | 29 septiembre 2023 | 3 octubre 2023 | 3 | 2 | 3 | 3,4,5 | 200 | (completed)" width="1366"/>
+                <img src="3136a1c110df2b74e945cf79679c0d496486b7448f75244dbd879cce45e4a884.png" title=" Given The user gets into the accommodation page" width="1366"/>
+                <img src="3136a1c110df2b74e945cf79679c0d496486b7448f75244dbd879cce45e4a884.png" title=" User opens the https://www.booking.com/" width="1366"/>
+                <img src="3136a1c110df2b74e945cf79679c0d496486b7448f75244dbd879cce45e4a884.png" title=" Given The user gets into the accommodation page (completed)" width="1366"/>
+                <img src="5ebc016fe9bfb801293e3fe68df7b583a1b32a32e7f0c191b899df522e07e958.png" title=" When The user changes the currency
+| currency | destination | inDate | outDate | adults | kids | rooms | stars | minPrice |
+| USD | Cartagena de Indias | 29 septiembre 2023 | 3 octubre 2023 | 3 | 2 | 3 | 3,4,5 | 200 |" width="1366"/>
+                <img src="5ebc016fe9bfb801293e3fe68df7b583a1b32a32e7f0c191b899df522e07e958.png" title=" User change currency" width="1366"/>
+                <img src="5ebc016fe9bfb801293e3fe68df7b583a1b32a32e7f0c191b899df522e07e958.png" title=" User clicks on Button to close initial popup" width="1366"/>
+                <img src="f941f8a9c74bdef89b5ddabc6a0bbb2311d56f97084d5fc2b8bd8f4c9283ef31.png" title=" User clicks on Button to close initial popup (completed)" width="1366"/>
+                <img src="f941f8a9c74bdef89b5ddabc6a0bbb2311d56f97084d5fc2b8bd8f4c9283ef31.png" title=" User clicks on Button to deploy the currency" width="1366"/>
+                <img src="9270a7cbd80fd5e22a354a0d9d6f165ca91dd2941dfe94a63e9264e45c4e9eac.png" title=" User clicks on Button to deploy the currency (completed)" width="1366"/>
+                <img src="9270a7cbd80fd5e22a354a0d9d6f165ca91dd2941dfe94a63e9264e45c4e9eac.png" title=" User clicks on Button to change the currency" width="1366"/>
+                <img src="e34ff044fcc70374c9a1a1e1193fa4947ec3f5f89912153365b0d11fcdd71617.png" title=" User clicks on Button to change the currency (completed)" width="1366"/>
+                <img src="e34ff044fcc70374c9a1a1e1193fa4947ec3f5f89912153365b0d11fcdd71617.png" title=" User change currency (completed)" width="1366"/>
+                <img src="e34ff044fcc70374c9a1a1e1193fa4947ec3f5f89912153365b0d11fcdd71617.png" title=" When The user changes the currency
+| currency | destination | inDate | outDate | adults | kids | rooms | stars | minPrice |
+| USD | Cartagena de Indias | 29 septiembre 2023 | 3 octubre 2023 | 3 | 2 | 3 | 3,4,5 | 200 | (completed)" width="1366"/>
+                <img src="dbd094d25943a4cc677e617b90e8795cb327b8f620bdf9d85ddad7e8b94e8a32.png" title=" When The user enters the person params
+| currency | destination | inDate | outDate | adults | kids | rooms | stars | minPrice |
+| USD | Cartagena de Indias | 29 septiembre 2023 | 3 octubre 2023 | 3 | 2 | 3 | 3,4,5 | 200 |" width="1366"/>
+                <img src="dbd094d25943a4cc677e617b90e8795cb327b8f620bdf9d85ddad7e8b94e8a32.png" title=" User enter person params" width="1366"/>
+                <img src="dbd094d25943a4cc677e617b90e8795cb327b8f620bdf9d85ddad7e8b94e8a32.png" title=" User clicks on Person picker" width="1366"/>
+                <img src="50d5b6493cd8ff37c0ea92d2765a51e1772654e81276acc433dbccc15102b172.png" title=" User clicks on Person picker (completed)" width="1366"/>
+                <img src="50d5b6493cd8ff37c0ea92d2765a51e1772654e81276acc433dbccc15102b172.png" title=" User clicks on Button to add adults at person params" width="1366"/>
+                <img src="7275a633f38a7cc7562dd9faf3b01f94be335da5325fd8891665b292fb6ebb33.png" title=" User clicks on Button to add adults at person params (completed)" width="1366"/>
+                <img src="7275a633f38a7cc7562dd9faf3b01f94be335da5325fd8891665b292fb6ebb33.png" title=" User clicks on Button to add kids at person params" width="1366"/>
+                <img src="fbe938c337dadf9b9447327ade137af030e5735b0ca7d9d1404fc7cd2e41aed1.png" title=" User clicks on Button to add kids at person params (completed)" width="1366"/>
+                <img src="fbe938c337dadf9b9447327ade137af030e5735b0ca7d9d1404fc7cd2e41aed1.png" title=" User clicks on Button to add kids at person params" width="1366"/>
+                <img src="56807f977eda3b373ea9fd744b897713b2c0299873658fd0b7a8ef6ed70af0eb.png" title=" User clicks on Button to add kids at person params (completed)" width="1366"/>
+                <img src="56807f977eda3b373ea9fd744b897713b2c0299873658fd0b7a8ef6ed70af0eb.png" title=" User clicks on Button to add room at person params" width="1366"/>
+                <img src="18d6c27d42fffc8539c5b60301435add1e955bd5b3ecc3c4ea8efa9decb49bad.png" title=" User clicks on Button to add room at person params (completed)" width="1366"/>
+                <img src="18d6c27d42fffc8539c5b60301435add1e955bd5b3ecc3c4ea8efa9decb49bad.png" title=" User selects 8 in Select the kid age value" width="1366"/>
+                <img src="1f14b2f029bbfbeb6591bb9d4317c92381b1ea13b2e40d772492c37fa57e785d.png" title=" User selects 8 in Select the kid age value (completed)" width="1366"/>
+                <img src="1f14b2f029bbfbeb6591bb9d4317c92381b1ea13b2e40d772492c37fa57e785d.png" title=" User clicks on Person picker" width="1366"/>
+                <img src="99716f02222f7c8fc683b5150c9c99ef57215dd45f6e34a912b288d8896a7728.png" title=" User clicks on Person picker (completed)" width="1366"/>
+                <img src="99716f02222f7c8fc683b5150c9c99ef57215dd45f6e34a912b288d8896a7728.png" title=" User selects 8 in Select the kid age value" width="1366"/>
+                <img src="6ebf598708e1f04c3abf369d6693390f27228f58589aa761e33c2c725b6992fc.png" title=" User selects 8 in Select the kid age value (completed)" width="1366"/>
+                <img src="6ebf598708e1f04c3abf369d6693390f27228f58589aa761e33c2c725b6992fc.png" title=" User clicks on Person picker" width="1366"/>
+                <img src="eec66098c229ab6380d3d71dc6b68173032a2e2e40a3459f865bc614e09e7a50.png" title=" User clicks on Person picker (completed)" width="1366"/>
+                <img src="eec66098c229ab6380d3d71dc6b68173032a2e2e40a3459f865bc614e09e7a50.png" title=" User enter person params (completed)" width="1366"/>
+                <img src="eec66098c229ab6380d3d71dc6b68173032a2e2e40a3459f865bc614e09e7a50.png" title=" When The user enters the person params
+| currency | destination | inDate | outDate | adults | kids | rooms | stars | minPrice |
+| USD | Cartagena de Indias | 29 septiembre 2023 | 3 octubre 2023 | 3 | 2 | 3 | 3,4,5 | 200 | (completed)" width="1366"/>
+                <img src="eec66098c229ab6380d3d71dc6b68173032a2e2e40a3459f865bc614e09e7a50.png" title=" Then The user can see a age select for each kid
+| currency | destination | inDate | outDate | adults | kids | rooms | stars | minPrice |
+| USD | Cartagena de Indias | 29 septiembre 2023 | 3 octubre 2023 | 3 | 2 | 3 | 3,4,5 | 200 |" width="1366"/>
+                <img src="eec66098c229ab6380d3d71dc6b68173032a2e2e40a3459f865bc614e09e7a50.png" title=" Then check kids ages question should be (true)" width="1366"/>
+                <img src="eec66098c229ab6380d3d71dc6b68173032a2e2e40a3459f865bc614e09e7a50.png" title=" Then The user can see a age select for each kid
+| currency | destination | inDate | outDate | adults | kids | rooms | stars | minPrice |
+| USD | Cartagena de Indias | 29 septiembre 2023 | 3 octubre 2023 | 3 | 2 | 3 | 3,4,5 | 200 | (completed)" width="1366"/>
+                <img src="b1034357f36b7f97e9e538bcc841a77bb2bd77d6d6b85223b75f9082c6cecac9.png" title=" Example: null" width="1366"/>
+                <img src="b1034357f36b7f97e9e538bcc841a77bb2bd77d6d6b85223b75f9082c6cecac9.png" title=" Given The user gets into the accommodation page" width="1366"/>
+                <img src="b1034357f36b7f97e9e538bcc841a77bb2bd77d6d6b85223b75f9082c6cecac9.png" title=" User opens the https://www.booking.com/" width="1366"/>
+                <img src="b1034357f36b7f97e9e538bcc841a77bb2bd77d6d6b85223b75f9082c6cecac9.png" title=" Given The user gets into the accommodation page (completed)" width="1366"/>
+                <img src="b1034357f36b7f97e9e538bcc841a77bb2bd77d6d6b85223b75f9082c6cecac9.png" title=" When The user changes the currency
+| currency | destination | inDate | outDate | adults | kids | rooms | stars | minPrice |
+| USD | Cartagena de Indias | 29 septiembre 2023 | 3 octubre 2023 | 3 | 2 | 3 | 3,4,5 | 200 |" width="1366"/>
+                <img src="b1034357f36b7f97e9e538bcc841a77bb2bd77d6d6b85223b75f9082c6cecac9.png" title=" User change currency" width="1366"/>
+                <img src="b1034357f36b7f97e9e538bcc841a77bb2bd77d6d6b85223b75f9082c6cecac9.png" title=" User clicks on Button to close initial popup" width="1366"/>
+                <img src="d5b7ad595abd2e066349fbaf1e86dbf97bf35e849c2b8a419c699d618cf1d79c.png" title=" User clicks on Button to close initial popup (completed)" width="1366"/>
+                <img src="d5b7ad595abd2e066349fbaf1e86dbf97bf35e849c2b8a419c699d618cf1d79c.png" title=" User clicks on Button to deploy the currency" width="1366"/>
+                <img src="3d83339e6c6d75d4f928ae74cda98c0b0f75ca26e0e1090fdbddd06ff5b963eb.png" title=" User clicks on Button to deploy the currency (completed)" width="1366"/>
+                <img src="3d83339e6c6d75d4f928ae74cda98c0b0f75ca26e0e1090fdbddd06ff5b963eb.png" title=" User clicks on Button to change the currency" width="1366"/>
+                <img src="d03e6c78b76c267119b91a8a533c67cbe054bd3df9664f78a173a1f7fbfac020.png" title=" User clicks on Button to change the currency (completed)" width="1366"/>
+                <img src="d03e6c78b76c267119b91a8a533c67cbe054bd3df9664f78a173a1f7fbfac020.png" title=" User change currency (completed)" width="1366"/>
+                <img src="d03e6c78b76c267119b91a8a533c67cbe054bd3df9664f78a173a1f7fbfac020.png" title=" When The user changes the currency
+| currency | destination | inDate | outDate | adults | kids | rooms | stars | minPrice |
+| USD | Cartagena de Indias | 29 septiembre 2023 | 3 octubre 2023 | 3 | 2 | 3 | 3,4,5 | 200 | (completed)" width="1366"/>
+                <img src="b95fc5a21094d7d839b242d56168fdbfb2ce1f106f98f16a035fb52d16453b1c.png" title=" When The user enters destination name params
+| destination |
+| Cartagena de Indias |" width="1366"/>
+                <img src="b95fc5a21094d7d839b242d56168fdbfb2ce1f106f98f16a035fb52d16453b1c.png" title=" User enter destination params" width="1366"/>
+                <img src="b95fc5a21094d7d839b242d56168fdbfb2ce1f106f98f16a035fb52d16453b1c.png" title=" User enters 'Cartagena de Indias' into Destination text param" width="1366"/>
+                <img src="e41222203a76ccc0dac19e7a12b7f7fb5714697a2b87c3b528c93a95fa107f4c.png" title=" User enters 'Cartagena de Indias' into Destination text param (completed)" width="1366"/>
+                <img src="e41222203a76ccc0dac19e7a12b7f7fb5714697a2b87c3b528c93a95fa107f4c.png" title=" User enter destination params (completed)" width="1366"/>
+                <img src="e41222203a76ccc0dac19e7a12b7f7fb5714697a2b87c3b528c93a95fa107f4c.png" title=" When The user enters destination name params
+| destination |
+| Cartagena de Indias | (completed)" width="1366"/>
+                <img src="e41222203a76ccc0dac19e7a12b7f7fb5714697a2b87c3b528c93a95fa107f4c.png" title=" And The user enters in and out date params
+| inDate | outDate |
+| 29 septiembre 2023 | 3 octubre 2023 |" width="1366"/>
+                <img src="e41222203a76ccc0dac19e7a12b7f7fb5714697a2b87c3b528c93a95fa107f4c.png" title=" User enter date params" width="1366"/>
+                <img src="e41222203a76ccc0dac19e7a12b7f7fb5714697a2b87c3b528c93a95fa107f4c.png" title=" User clicks on Date picker" width="1366"/>
+                <img src="d5200e2efb5b6edd1ff6a8e42f282a2b2825af63a64f9c620f684f4893ebd00e.png" title=" User clicks on Date picker (completed)" width="1366"/>
+                <img src="d5200e2efb5b6edd1ff6a8e42f282a2b2825af63a64f9c620f684f4893ebd00e.png" title=" User clicks on Dates labels" width="1366"/>
+                <img src="787000328a3ae7667ae896a763135e4e76b1ea83af4716d7e2f8b3d499b19963.png" title=" User clicks on Dates labels (completed)" width="1366"/>
+                <img src="787000328a3ae7667ae896a763135e4e76b1ea83af4716d7e2f8b3d499b19963.png" title=" User clicks on Dates labels" width="1366"/>
+                <img src="4b310062afd0ffaec8b3dbb6e29e0fc73ff17e55cf851d9198bb7d4882da53b5.png" title=" User clicks on Dates labels (completed)" width="1366"/>
+                <img src="4b310062afd0ffaec8b3dbb6e29e0fc73ff17e55cf851d9198bb7d4882da53b5.png" title=" User enter date params (completed)" width="1366"/>
+                <img src="4b310062afd0ffaec8b3dbb6e29e0fc73ff17e55cf851d9198bb7d4882da53b5.png" title=" And The user enters in and out date params
+| inDate | outDate |
+| 29 septiembre 2023 | 3 octubre 2023 | (completed)" width="1366"/>
+                <img src="4b310062afd0ffaec8b3dbb6e29e0fc73ff17e55cf851d9198bb7d4882da53b5.png" title=" And The user enters the person params
+| adults | kids | rooms |
+| 3 | 2 | 3 |" width="1366"/>
+                <img src="4b310062afd0ffaec8b3dbb6e29e0fc73ff17e55cf851d9198bb7d4882da53b5.png" title=" User enter person params" width="1366"/>
+                <img src="4b310062afd0ffaec8b3dbb6e29e0fc73ff17e55cf851d9198bb7d4882da53b5.png" title=" User clicks on Person picker" width="1366"/>
+                <img src="dd337b58ed531ca11040cb6fcdb9c3ce8adba08e97df5af7ae7b5f5618553676.png" title=" User clicks on Person picker (completed)" width="1366"/>
+                <img src="dd337b58ed531ca11040cb6fcdb9c3ce8adba08e97df5af7ae7b5f5618553676.png" title=" User clicks on Button to add adults at person params" width="1366"/>
+                <img src="823fa2149a10298744104a57842163717232093b8ce9561ebcf805544f3c78a9.png" title=" User clicks on Button to add adults at person params (completed)" width="1366"/>
+                <img src="823fa2149a10298744104a57842163717232093b8ce9561ebcf805544f3c78a9.png" title=" User clicks on Button to add kids at person params" width="1366"/>
+                <img src="8f42a83bf471b6819d61ca5b65f921ca8ecba4e0c9710bd44ff34d6632e7fae4.png" title=" User clicks on Button to add kids at person params (completed)" width="1366"/>
+                <img src="8f42a83bf471b6819d61ca5b65f921ca8ecba4e0c9710bd44ff34d6632e7fae4.png" title=" User clicks on Button to add kids at person params" width="1366"/>
+                <img src="a7d17aec600536ffe14243ec5bad6137767a4f733547c250d1313f18fe9b9489.png" title=" User clicks on Button to add kids at person params (completed)" width="1366"/>
+                <img src="a7d17aec600536ffe14243ec5bad6137767a4f733547c250d1313f18fe9b9489.png" title=" User clicks on Button to add room at person params" width="1366"/>
+                <img src="667c81ee1c94cc30e39fc059be0e8472c89d4f4f5f67fb42af6d757f06a3704d.png" title=" User clicks on Button to add room at person params (completed)" width="1366"/>
+                <img src="667c81ee1c94cc30e39fc059be0e8472c89d4f4f5f67fb42af6d757f06a3704d.png" title=" User selects 8 in Select the kid age value" width="1366"/>
+                <img src="c2f05aed71ba9e8a264a3dcbd76742a0831f59964ddb9bfe46bf678edd1813a7.png" title=" User selects 8 in Select the kid age value (completed)" width="1366"/>
+                <img src="c2f05aed71ba9e8a264a3dcbd76742a0831f59964ddb9bfe46bf678edd1813a7.png" title=" User clicks on Person picker" width="1366"/>
+                <img src="6656c74633bfb3e28ae1e33fe6c875a6305c37597444a7d2b72a4c30deae2df0.png" title=" User clicks on Person picker (completed)" width="1366"/>
+                <img src="6656c74633bfb3e28ae1e33fe6c875a6305c37597444a7d2b72a4c30deae2df0.png" title=" User selects 8 in Select the kid age value" width="1366"/>
+                <img src="c2574c9ee025eb34cee56152142bd6508ef6c3bac09d5a519a65a3654c5699b9.png" title=" User selects 8 in Select the kid age value (completed)" width="1366"/>
+                <img src="c2574c9ee025eb34cee56152142bd6508ef6c3bac09d5a519a65a3654c5699b9.png" title=" User clicks on Person picker" width="1366"/>
+                <img src="9689ef85120a5af2905836f26795ed3b504bc1db0393c1bebb33d7983f040603.png" title=" User clicks on Person picker (completed)" width="1366"/>
+                <img src="9689ef85120a5af2905836f26795ed3b504bc1db0393c1bebb33d7983f040603.png" title=" User enter person params (completed)" width="1366"/>
+                <img src="9689ef85120a5af2905836f26795ed3b504bc1db0393c1bebb33d7983f040603.png" title=" And The user enters the person params
+| adults | kids | rooms |
+| 3 | 2 | 3 | (completed)" width="1366"/>
+                <img src="9689ef85120a5af2905836f26795ed3b504bc1db0393c1bebb33d7983f040603.png" title=" And The user performs a search at accommodation page" width="1366"/>
+                <img src="9689ef85120a5af2905836f26795ed3b504bc1db0393c1bebb33d7983f040603.png" title=" User search accommodation params" width="1366"/>
+                <img src="9689ef85120a5af2905836f26795ed3b504bc1db0393c1bebb33d7983f040603.png" title=" User clicks on Button to add adults at person params" width="1366"/>
+                <img src="6214c91f194f470baceab07c150e4c3995711b76f04d785964a65d79ef301f6f.png" title=" User clicks on Button to add adults at person params (completed)" width="1366"/>
+                <img src="6214c91f194f470baceab07c150e4c3995711b76f04d785964a65d79ef301f6f.png" title=" User search accommodation params (completed)" width="1366"/>
+                <img src="6214c91f194f470baceab07c150e4c3995711b76f04d785964a65d79ef301f6f.png" title=" And The user performs a search at accommodation page (completed)" width="1366"/>
+                <img src="6214c91f194f470baceab07c150e4c3995711b76f04d785964a65d79ef301f6f.png" title=" When The user filters by stars
+| stars |
+| 3,4,5 |" width="1366"/>
+                <img src="c4b026829402696dfe7c61600c19306d1510f25bad26acb9eb9edf73aa8da10d.png" title=" User filter by stars" width="1366"/>
+                <img src="30f3b92bb9702c529c95525585bcc851c2ccee9d251cb798e51c358b1e692f74.png" title=" User clicks on Button to add adults at person params" width="1366"/>
+                <img src="28e0a6956e2c0a94709352f86b7c413a7d5e9573a5c605663c873407efa892f5.png" title=" User clicks on Button to add adults at person params (completed)" width="1366"/>
+                <img src="8faddd89a915e852c8ceb9cb6edb08009ba65dacc651c84d409873df37aca06c.png" title=" User clicks on Button to add adults at person params" width="1366"/>
+                <img src="5f9e0e8172f5ac99e1e8b02f5c7128fa2607dd02c81fbaf42b87ded886cb43c4.png" title=" User clicks on Button to add adults at person params (completed)" width="1366"/>
+                <img src="7dc54c393f5e7400acf5d8665901761df2a2b7119621bc78f2f3dc17331bac8e.png" title=" User clicks on Button to add adults at person params" width="1366"/>
+                <img src="55977848e9f09a716fc8c1c9a8e6d5c8f62c8e56c9046b149b94b4304c89df77.png" title=" User clicks on Button to add adults at person params (completed)" width="1366"/>
+                <img src="55977848e9f09a716fc8c1c9a8e6d5c8f62c8e56c9046b149b94b4304c89df77.png" title=" User filter by stars (completed)" width="1366"/>
+                <img src="55977848e9f09a716fc8c1c9a8e6d5c8f62c8e56c9046b149b94b4304c89df77.png" title=" When The user filters by stars
+| stars |
+| 3,4,5 | (completed)" width="1366"/>
+                <img src="55977848e9f09a716fc8c1c9a8e6d5c8f62c8e56c9046b149b94b4304c89df77.png" title=" And The user filters by price
+| minPrice |
+| 200 |" width="1366"/>
+                <img src="55977848e9f09a716fc8c1c9a8e6d5c8f62c8e56c9046b149b94b4304c89df77.png" title=" And The user filters by price
+| minPrice |
+| 200 | (completed)" width="1366"/>
+                <img src="762111b221c8c1afd4b39dbee28e0376253c72deaf73e7c391e1dedcda5f7a55.png" title=" And the user orders by price" width="1366"/>
+                <img src="762111b221c8c1afd4b39dbee28e0376253c72deaf73e7c391e1dedcda5f7a55.png" title=" User sort accommodations by price" width="1366"/>
+                <img src="4bc73f75e321225bcacb62c6bdbc23c693710534354553ef23dc1e48fe19d629.png" title=" User clicks on Button to deploy the sorter" width="1366"/>
+                <img src="2bf84c45ccfa9005c0dc49b7031baccf09ce1e3e796c84efa434aa66971f78c1.png" title=" User clicks on Button to deploy the sorter (completed)" width="1366"/>
+                <img src="2bf84c45ccfa9005c0dc49b7031baccf09ce1e3e796c84efa434aa66971f78c1.png" title=" User clicks on Button to sort by lower price" width="1366"/>
+                <img src="a0a54b11e51ffe441af6228c52c115e6f771c0fb44ba93f215931452f7833e61.png" title=" User clicks on Button to sort by lower price (completed)" width="1366"/>
+                <img src="ea9aed3b68cde459210f36bb92d3062fd7f8f7f1f307e51055276e397f6f51c4.png" title=" User sort accommodations by price (completed)" width="1366"/>
+                <img src="ea9aed3b68cde459210f36bb92d3062fd7f8f7f1f307e51055276e397f6f51c4.png" title=" And the user orders by price (completed)" width="1366"/>
+                <img src="ea9aed3b68cde459210f36bb92d3062fd7f8f7f1f307e51055276e397f6f51c4.png" title=" When The user enters in the hotel offers" width="1366"/>
+                <img src="ea9aed3b68cde459210f36bb92d3062fd7f8f7f1f307e51055276e397f6f51c4.png" title=" User select first offer" width="1366"/>
+                <img src="ea9aed3b68cde459210f36bb92d3062fd7f8f7f1f307e51055276e397f6f51c4.png" title=" User clicks on Button to select the first result" width="1366"/>
+                <img src="32f38bd86a92b26fc223d51a0915868887944bba7d82df92d3ed888b73c9d160.png" title=" User clicks on Button to select the first result (completed)" width="1366"/>
+                <img src="32f38bd86a92b26fc223d51a0915868887944bba7d82df92d3ed888b73c9d160.png" title=" User select first offer (completed)" width="1366"/>
+                <img src="32f38bd86a92b26fc223d51a0915868887944bba7d82df92d3ed888b73c9d160.png" title=" When The user enters in the hotel offers (completed)" width="1366"/>
+                <img src="32f38bd86a92b26fc223d51a0915868887944bba7d82df92d3ed888b73c9d160.png" title=" Then The user can the the apllied params
+| adults | kids |
+| 3 | 3 |" width="1366"/>
+                <img src="f36503b185d2524f66e1fed8f2a82e16385a69e634c482fa18c62b8c7aad6e81.png" title=" Then check accommodation params should be (true)" width="1366"/>
+                <img src="24ede970e8e8b8b2b0da1338f8a09468b13bc79d0c055b23b09601b728e7b4ed.png" title=" Then check accommodation params should be (true) (completed)" width="1366"/>
+                <img src="24ede970e8e8b8b2b0da1338f8a09468b13bc79d0c055b23b09601b728e7b4ed.png" title=" Then The user can the the apllied params
+| adults | kids |
+| 3 | 3 | (completed)" width="1366"/>
+                <img src="24ede970e8e8b8b2b0da1338f8a09468b13bc79d0c055b23b09601b728e7b4ed.png" title=" And The user can see the applied filters" width="1366"/>
+                <img src="24ede970e8e8b8b2b0da1338f8a09468b13bc79d0c055b23b09601b728e7b4ed.png" title=" And The user can see the applied filters (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.81</span>
+</div>
+</body>
+</html>
