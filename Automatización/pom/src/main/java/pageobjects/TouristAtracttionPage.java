@@ -65,7 +65,7 @@ public class TouristAtracttionPage extends PageObject {
     public void setLBL_LOWPRICE(By LBL_LOWPRICE) {
         this.LBL_LOWPRICE = LBL_LOWPRICE;
     }
-
+  
     public By getLBL_VALIDATE_LOWERPRICE() {
         return LBL_VALIDATE_LOWERPRICE;
     }
