@@ -35,4 +35,14 @@ public class TouristAtracttionStepDefinition {
     public void theUserCanSeeTheButtonToSortByLowerPrice() {
         touristAtracttionStep.validateLowerPrice();
     }
+
+    @When("^The user sort by price$")
+    public void theUserSortByPrice() {
+        touristAtracttionStep.clickButtonLowerPrice();
+    }
+
+    @Then("^The user can see the price from low to high$")
+    public void theUserCanSeeThePriceFromLowToHigh() {
+        touristAtracttionStep.validateLowerPriceFilter();
+    }
 }

@@ -34,7 +34,38 @@ public class TouristAtracttionPage extends PageObject {
     //The lowest price filter is captured after searching
     By LBL_VALIDATE_LOWERPRICE = By.xpath("//label[text()='Precio más bajo']");
 
-    //Method to validate that after searching a low price filter is found
+    By LBL_LOWPRICE = By.xpath("//input[@value='lowest_price']");
+
+    By ATTRACTION_RESULTS = By.xpath("//div[@data-testid='sr-list']/div/div[1]/div/div/a/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]");
+    By ATTRACTION_RESULTS2 = By.xpath("//div[@data-testid='sr-list']/div/div[2]/div/div/a/div/div[2]/div[2]/div[2]/div[1]/div/div/div[2]");
+
+    public By getATTRACTION_RESULTS2() {
+        return ATTRACTION_RESULTS2;
+    }
+
+    public void setATTRACTION_RESULTS2(By ATTRACTION_RESULTS2) {
+        this.ATTRACTION_RESULTS2 = ATTRACTION_RESULTS2;
+    }
+
+    public By getATTRACTION_RESULTS() {
+        return ATTRACTION_RESULTS;
+    }
+
+    public void setATTRACTION_RESULTS(By ATTRACTION_RESULTS) {
+        this.ATTRACTION_RESULTS = ATTRACTION_RESULTS;
+    }
+
+    //Get and Setter Methods
+
+
+    public By getLBL_LOWPRICE() {
+        return LBL_LOWPRICE;
+    }
+
+    public void setLBL_LOWPRICE(By LBL_LOWPRICE) {
+        this.LBL_LOWPRICE = LBL_LOWPRICE;
+    }
+  
     public By getLBL_VALIDATE_LOWERPRICE() {
         return LBL_VALIDATE_LOWERPRICE;
     }
