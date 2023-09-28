@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import userinterfaces.AccommodationInterface;
 
-public class EnterDateParams implements Task {
+public class EnterDatePersonParams implements Task {
 
     AccommodationData accommodationData;
     @Override
@@ -20,7 +20,7 @@ public class EnterDateParams implements Task {
         );
     }
 
-    public static EnterDateParams enterDateParams(AccommodationData accommodationData){
-        return Tasks.instrumented(EnterDateParams.class, accommodationData);
+    public static EnterDatePersonParams enterPersonParams(AccommodationData accommodationData){
+        return Tasks.instrumented(EnterDatePersonParams.class, accommodationData);
     }
 }

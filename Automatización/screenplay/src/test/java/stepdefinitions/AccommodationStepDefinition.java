@@ -4,24 +4,15 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import models.AccommodationData;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
-import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
-import questions.*;
-import tasks.*;
-import utils.Sleep;
-
-import java.util.List;
 
 public class AccommodationStepDefinition {
-    Sleep sleep;
     @Managed
     WebDriver userBrowser;
 
@@ -45,121 +36,49 @@ public class AccommodationStepDefinition {
 
 
     @When("^The user changes the currency$")
-    public void theUserChangesTheCurrency(List<AccommodationData> accommodationDataList) {
-        AccommodationData accommodationData;
-        accommodationData = accommodationDataList.get(0);
-        //Change currency task
-        OnStage.theActorInTheSpotlight().attemptsTo(
-                ChangeCurrency.changeCurrency(accommodationData)
-        );
+    public void theUserChangesTheCurrency() {
     }
 
     @When("^The user enters destination name params$")
-    public void theUserEntersDestinationNameParams(List<AccommodationData> accommodationDataList) {
-        AccommodationData accommodationData;
-        accommodationData = accommodationDataList.get(0);
-        //Enter destination params task
-        OnStage.theActorInTheSpotlight().attemptsTo(
-                EnterDestinationParams.enterDestinationParams(accommodationData)
-        );
+    public void theUserEntersDestinationNameParams() {
     }
+
     @When("^The user enters in and out date params$")
-    public void theUserEntersInAndOutDateParams(List<AccommodationData> accommodationDataList) {
-        AccommodationData accommodationData;
-        accommodationData = accommodationDataList.get(0);
-        //Enters date params task
-        OnStage.theActorInTheSpotlight().attemptsTo(
-                EnterDateParams.enterDateParams(accommodationData)
-        );
+    public void theUserEntersInAndOutDateParams() {
     }
+
     @When("^The user enters the person params$")
-    public void theUserEntersThePersonParams(List<AccommodationData> accommodationDataList) {
-        AccommodationData accommodationData;
-        accommodationData = accommodationDataList.get(0);
-        //Enter person params task (Destination, date, persons)
-        OnStage.theActorInTheSpotlight().attemptsTo(
-                EnterPersonParams.enterPersonParams(accommodationData)
-        );
+    public void theUserEntersThePersonParams() {
     }
+
     @When("^The user performs a search at accommodation page$")
     public void theUserPerformsASearchAtAccommodationPage() {
-        //Click submit button task
-        OnStage.theActorInTheSpotlight().attemptsTo(
-                SearchAccommodationParams.submitParams()
-        );
     }
+
     @When("^The user filters by stars$")
-    public void theUserFiltersByStars(List<AccommodationData> accommodationDataList) {
-        AccommodationData accommodationData;
-        accommodationData = accommodationDataList.get(0);
-        //Click on the selected stars task
-        OnStage.theActorInTheSpotlight().attemptsTo(
-                FilterByStars.filterByStars(accommodationData)
-        );
+    public void theUserFiltersByStars() {
     }
 
     @When("^The user filters by price$")
-    public void theUserFiltersByPrice(List<AccommodationData> accommodationDataList) {
+    public void theUserFiltersByPrice() {
     }
 
     @When("^the user orders by price$")
     public void theUserOrdersByPrice() {
-        //Click on the filter trigger and select lower to higger price task
-        OnStage.theActorInTheSpotlight().attemptsTo(
-                SortAccommodationsByPrice.sortAccommodationsByPrice()
-        );
     }
 
     @When("^The user enters in the hotel offers$")
     public void theUserEntersInTheHotelOffers() {
-        //Clicks the first hotel offer task
-        OnStage.theActorInTheSpotlight().attemptsTo(
-                SelectFirstOffer.selectFirstOffer()
-        );
-
-    }
-
-    @When("^The user enters max params$")
-    public void theUserEntersMaxParams(List<AccommodationData> accommodationDataList) {
-        AccommodationData accommodationData;
-        accommodationData = accommodationDataList.get(0);
-        //Enter the max person params (Adults, childs and rooms) task
-        OnStage.theActorInTheSpotlight().attemptsTo(
-                EnterMaxPersonParams.enterMaxPersonParams(accommodationData)
-        );
-    }
-
-    @When("^The user just deploys person Params$")
-    public void theUserJustDeploysPersonParams(List<AccommodationData> accommodationDataList) {
-        AccommodationData accommodationData;
-        accommodationData = accommodationDataList.get(0);
-        //Deploy the person params and set all to the minimum value task
-        OnStage.theActorInTheSpotlight().attemptsTo(
-                SetPersonMinimunParams.deployPersonParams(accommodationData)
-        );
     }
 
     @Then("^The user can the the apllied params$")
-    public void theUserCanTheTheAplliedParams(List<AccommodationData> accommodationDataList) {
-        AccommodationData accommodationData;
-        accommodationData = accommodationDataList.get(0);
-        //Change window
-        userBrowser.getWindowHandles();
-        String currentWindow = userBrowser.getWindowHandle();
-        for (String window : userBrowser.getWindowHandles()) {
-            if (!window.equals (currentWindow)) {
-                userBrowser.switchTo ().window (window);
-            }
-        }
-        //Check the adults and children quantity on the hotel offer
-        OnStage.theActorInTheSpotlight()
-                .should(GivenWhenThen.seeThat(CheckAccommodationParams.compare(accommodationData),
-                        Matchers.equalTo(true)));
+    public void theUserCanTheTheAplliedParams() {
     }
 
     @Then("^The user can see the applied filters$")
     public void theUserCanSeeTheAppliedFilters() {
     }
+<<<<<<< HEAD
 
     @Then("^The user can see a age select for each kid$")
     public void theUserCanSeeAAgeSelectForEachKid(List<AccommodationData> accommodationDataList) {
@@ -201,4 +120,7 @@ public class AccommodationStepDefinition {
                 .should(GivenWhenThen.seeThat(CheckMinDisabledPersonButtons.compare(accommodationData),
                         Matchers.equalTo(true)));
     }
+    
+=======
+>>>>>>> parent of 22e3427 (All ready)
 }

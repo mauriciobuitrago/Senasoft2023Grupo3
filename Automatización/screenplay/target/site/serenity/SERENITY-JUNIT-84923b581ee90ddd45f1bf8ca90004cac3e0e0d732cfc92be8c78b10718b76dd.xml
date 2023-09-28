@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Accommodation" skipped="0" tests="3" time="125.77" timestamp="2023-09-28 11:06:00"><testcase name="Min person params values"/><testcase name="Max person params values"/><testcase name="Search hotel deals with params and filters"/></testsuite>
