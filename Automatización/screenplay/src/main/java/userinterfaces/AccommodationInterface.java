@@ -1,4 +1,2 @@
-package userinterfaces;
-
-public class AccommodationInterface {
+package userinterfaces;public class AccommodationInterface {
 }
