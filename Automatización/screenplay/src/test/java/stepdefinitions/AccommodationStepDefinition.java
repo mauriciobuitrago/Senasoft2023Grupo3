@@ -78,4 +78,49 @@ public class AccommodationStepDefinition {
     @Then("^The user can see the applied filters$")
     public void theUserCanSeeTheAppliedFilters() {
     }
+<<<<<<< HEAD
+
+    @Then("^The user can see a age select for each kid$")
+    public void theUserCanSeeAAgeSelectForEachKid(List<AccommodationData> accommodationDataList) {
+        AccommodationData accommodationData;
+        accommodationData = accommodationDataList.get(0);
+        //Check if for each child, a select label is created
+        OnStage.theActorInTheSpotlight()
+                .should(GivenWhenThen.seeThat(CheckKidsAgesQuestion.compare(accommodationData),
+                        Matchers.equalTo(true)));
+    }
+    @Then("^The user can see the destion required popup$")
+    public void theUserCanSeeTheDestionRequiredPopup(List<AccommodationData> accommodationDataList) {
+        AccommodationData accommodationData;
+        accommodationData = accommodationDataList.get(0);
+        //Check if the user doesnt enter a destination, displays a pupup
+        OnStage.theActorInTheSpotlight()
+                .should(GivenWhenThen.seeThat(CheckRequiredDestination.compare(accommodationData),
+                        Matchers.equalTo(true)));
+    }
+
+    @Then("^The user can see that the person params buttons are disabled$")
+    public void theUserCanSeeThatThePersonParamsButtonsAreDisabled(List<AccommodationData> accommodationDataList) {
+        AccommodationData accommodationData;
+        accommodationData = accommodationDataList.get(0);
+        //Check if the person params buttons are disabled on their max value
+        // 30 for adults, 10 for children and 30 for rooms
+        OnStage.theActorInTheSpotlight()
+                .should(GivenWhenThen.seeThat(CheckMaxDisabledPersonButtons.compare(accommodationData),
+                        Matchers.equalTo(true)));
+    }
+
+    @Then("^The user can see that the person minimun params buttons are disabled$")
+    public void theUserCanSeeThatThePersonMinimunParamsButtonsAreDisabled(List<AccommodationData> accommodationDataList) {
+        AccommodationData accommodationData;
+        accommodationData = accommodationDataList.get(0);
+        //Check if the person params buttons are disabled on their min value
+        // 1 for adults, 0 for children and 1 for rooms
+        OnStage.theActorInTheSpotlight()
+                .should(GivenWhenThen.seeThat(CheckMinDisabledPersonButtons.compare(accommodationData),
+                        Matchers.equalTo(true)));
+    }
+    
+=======
+>>>>>>> parent of 22e3427 (All ready)
 }
